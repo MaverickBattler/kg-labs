@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Лаб1 Мохнаткин</title>
+    </head>
+   <body onload="main()">
+      <canvas width = "600" height = "600" id = "my_Canvas"></canvas>  
+      <script src="Lab1.js"></script>
+      <div>
+         <label for="x">Положение по оси X</label>
+         <input type="range" id="x" name="x"
+            min="-1" max="1" step="0.01">
+         <output id="xValue">0</output>
+      </div>
+      <div>
+         <label for="y">Положение по оси Y</label>
+         <input type="range" id="y" name="y"
+            min="-1" max="1" step="0.01">
+         <output id="yValue">0</output>
+      </div>
+      <div>
+         <label for="angle">Угол поворота фигуры</label>
+         <input type="range" id="angle" name="angle"
+            min="0" max="360" value="-1">
+         <output id="angleValue">0</output>
+      </div>
+      <div>
+         <label for="scaleX">Размер по оси X</label>
+         <input type="range" id="scaleX" name="scaleX"
+            min="0.01" max="2" step="0.01">
+         <output id="scaleXValue">1</output>
+      </div>
+      <div>
+         <label for="scaleY">Размер по оси Y</label>
+         <input type="range" id="scaleY" name="scaleY"
+            min="0.01" max="2" step="0.01">
+         <output id="scaleYValue">1</output>
+      </div>
+      <script src="lib/webgl-utils.js"></script>
+      <script src="lib/webgl-debug.js"></script>
+      <script src="lib/cuon-utils.js"></script>
+      <script src="lib/cuon-matrix.js"></script>
+   </body>   
+</html>
